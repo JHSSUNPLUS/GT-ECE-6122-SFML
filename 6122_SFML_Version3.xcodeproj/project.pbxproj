@@ -13,10 +13,18 @@
 /* Begin PBXFileReference section */
 		BEE394A629001C380018FF6F /* 6122_SFML_Version3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 6122_SFML_Version3; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE394A929001C380018FF6F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		BEE394AC29001C380018FF6F /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cute_image.jpg; path = ../cute_image.jpg; sourceTree = "<group>"; };
-		BEE394AD29001C380018FF6F /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; name = nice_music.ogg; path = ../nice_music.ogg; sourceTree = "<group>"; };
-		BEE394AE29001C380018FF6F /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sansation.ttf; path = ../sansation.ttf; sourceTree = "<group>"; };
-		BEE394AF29001C380018FF6F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		BEE394B529001C8E0018FF6F /* mapGenerate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mapGenerate.cpp; sourceTree = "<group>"; };
+		BEE394B629001C8E0018FF6F /* graphics */ = {isa = PBXFileReference; lastKnownFileType = folder; path = graphics; sourceTree = "<group>"; };
+		BEE394BA29022A880018FF6F /* positionTranslate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = positionTranslate.cpp; sourceTree = "<group>"; };
+		BEE394BC290264D30018FF6F /* globalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = globalVariable.h; sourceTree = "<group>"; };
+		BEE394D2290829030018FF6F /* mapGenerate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mapGenerate.h; sourceTree = "<group>"; };
+		BEE394D32908F6B30018FF6F /* interactCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = interactCheck.h; sourceTree = "<group>"; };
+		BEE394D42908F8620018FF6F /* positionTranslate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = positionTranslate.h; sourceTree = "<group>"; };
+		BEE394D5290910610018FF6F /* coinsManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = coinsManage.h; sourceTree = "<group>"; };
+		BEE394D6290917150018FF6F /* ghostBlueManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ghostBlueManage.h; sourceTree = "<group>"; };
+		BEE394D72909172E0018FF6F /* ghostOrangeManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ghostOrangeManage.h; sourceTree = "<group>"; };
+		BEE394D8290917430018FF6F /* ghostPinkManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ghostPinkManage.h; sourceTree = "<group>"; };
+		BEE394D9290917570018FF6F /* ghostRedManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ghostRedManage.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,20 +58,20 @@
 			isa = PBXGroup;
 			children = (
 				BEE394A929001C380018FF6F /* main.cpp */,
-				BEE394AB29001C380018FF6F /* Resources */,
+				BEE394BC290264D30018FF6F /* globalVariable.h */,
+				BEE394B529001C8E0018FF6F /* mapGenerate.cpp */,
+				BEE394D2290829030018FF6F /* mapGenerate.h */,
+				BEE394BA29022A880018FF6F /* positionTranslate.cpp */,
+				BEE394D42908F8620018FF6F /* positionTranslate.h */,
+				BEE394D5290910610018FF6F /* coinsManage.h */,
+				BEE394D32908F6B30018FF6F /* interactCheck.h */,
+				BEE394D6290917150018FF6F /* ghostBlueManage.h */,
+				BEE394D72909172E0018FF6F /* ghostOrangeManage.h */,
+				BEE394D8290917430018FF6F /* ghostPinkManage.h */,
+				BEE394D9290917570018FF6F /* ghostRedManage.h */,
+				BEE394B629001C8E0018FF6F /* graphics */,
 			);
 			path = 6122_SFML_Version3;
-			sourceTree = "<group>";
-		};
-		BEE394AB29001C380018FF6F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				BEE394AC29001C380018FF6F /* cute_image.jpg */,
-				BEE394AD29001C380018FF6F /* nice_music.ogg */,
-				BEE394AE29001C380018FF6F /* sansation.ttf */,
-				BEE394AF29001C380018FF6F /* icon.png */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +230,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				COPY_HEADERS_RUN_UNIFDEF = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -230,6 +239,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				COPY_HEADERS_RUN_UNIFDEF = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
